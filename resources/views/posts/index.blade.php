@@ -8,11 +8,16 @@
     <title>Elenco Post</title>
 </head>
 <body>
+    <a href="{{route('admin.posts.create')}}" class='btn'>Aggiungi</a>
     @foreach($posts as $post)
         <h2>{{$post->title}}</h2>
         <p>{{$post->content}}</p>
         <img src="{{$post->image}}" alt="">
+        <br>
+        <a href="{{route('admin.posts.show', $post->id)}}" class='btn'>mostra</a>
+        <br>
+        <a href="{{route('admin.posts.edit', $post->id)}}">Modifica</a>
         <hr>
-    @endforeach
+        @endforeach
 </body>
 </html>

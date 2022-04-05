@@ -13,5 +13,10 @@
         <img src="{{$post->image}}" alt="">
         <hr>
         <a href="{{route('admin.posts.index')}}">Torna indietro</a>
+        <form action="{{route('admin.posts.destroy', $post->id)}}" method="POST">
+            @csrf 
+            @method('DELETE')
+            <button type="submit">Cancella</button>
+        </form>
     </body>
 </html>
