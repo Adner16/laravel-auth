@@ -49618,12 +49618,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!*******************************!*\
   !*** ./resources/js/front.js ***!
   \*******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/components/App.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -49632,13 +49629,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* 
+import App from './components/App.vue';
 
-var root = new Vue({
-  el: '#root',
-  render: function render(h) {
-    return h(!(function webpackMissingModule() { var e = new Error("Cannot find module '/components/App.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-  }
-});
+const root = new Vue({
+    el: '#root',
+    render: h => h(App)
+}); */
 
 /***/ }),
 

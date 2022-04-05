@@ -82,7 +82,9 @@
             @endif
 
             <div class="content">
-                <div id="root"></div>
+                <div id="root">
+                    <h1>Benvenuto!</h1>
+                </div>
             </div>
         </div>
     </body>
